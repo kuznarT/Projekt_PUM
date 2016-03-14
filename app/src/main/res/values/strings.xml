@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">WELowanie</string>
+    <string name="title_activity_question">QuestionActivity</string>
+    
+    <string-array name="level_difficulty">
+        <item>Semestr I</item>
+        <item>Semestr II</item>
+        <item>Semestr III</item>
+        <item>Semestr IV</item>
+        <item>Semestr V</item>
+        <item>Semestr VI</item>
+        <item>Best_of_Wat</item>
+    </string-array>
+    <string-array name="hardness">
+        <item>Trudność: *</item>
+        <item>Trudność: ***</item>
+        <item>Trudność: ***</item>
+        <item>Trudność: **</item>
+        <item>Trudność: *</item>
+        <item>Trudność: **</item>
+        <item>Trudność: *</item>
+    </string-array>
+</resources>
