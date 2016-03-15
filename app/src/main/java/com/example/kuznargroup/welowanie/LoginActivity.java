@@ -9,9 +9,6 @@ import android.widget.Toast;
 
 import com.example.ardian.menuexample.R;
 
-/**
- * Created by Ardian on 2016-03-14.
- */
 public class LoginActivity extends AppCompatActivity {
 
     EditText etLogin;
@@ -33,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
         String login = etLogin.getText().toString();
         String password = etPassword.getText().toString();
 
-        if ((login.equals("Pluto")) && (password.equals("asdzxc"))){
+        if ((login.equals("Pluto")) && (password.equals("asdzxc"))) {
             Intent intent = new Intent(this, MenuActivity.class);
             final int result = 1;
 
@@ -41,9 +38,8 @@ public class LoginActivity extends AppCompatActivity {
 
             startActivityForResult(intent, result);
             finish();
-        }
-        else
-            Toast.makeText(this,"Złe hasło lub login",Toast.LENGTH_LONG).show();
+        } else
+            Toast.makeText(this, "Złe hasło lub login", Toast.LENGTH_LONG).show();
 
     }
 
