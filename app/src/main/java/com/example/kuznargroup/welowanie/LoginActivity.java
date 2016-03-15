@@ -33,14 +33,19 @@ public class LoginActivity extends AppCompatActivity {
         String login = etLogin.getText().toString();
         String password = etPassword.getText().toString();
 
-        if ((login.equals("Welowanie")) && (password.equals("asdzxc"))){
+        if ((login.equals("Pluto")) && (password.equals("asdzxc"))){
             Intent intent = new Intent(this, MenuActivity.class);
-            startActivity(intent);
+            final int result = 1;
+
+            intent.putExtra("user_login", login);
+
+            startActivityForResult(intent, result);
             finish();
         }
         else
             Toast.makeText(this,"Złe hasło lub login",Toast.LENGTH_LONG).show();
 
     }
+
 }
 
