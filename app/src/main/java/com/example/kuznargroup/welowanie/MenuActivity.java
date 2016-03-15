@@ -11,7 +11,7 @@ import com.example.ardian.menuexample.R;
 /**
  * Created by Ardian on 2016-03-14.
  */
-public class MenuActivity extends AppCompatActivity {
+public class git initMenuActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
