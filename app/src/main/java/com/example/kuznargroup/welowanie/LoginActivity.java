@@ -1,15 +1,13 @@
 package com.example.kuznargroup.welowanie;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.ardian.menuexample.R;
-
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends Activity {
 
     EditText etLogin;
     EditText etPassword;
@@ -30,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
         String login = etLogin.getText().toString();
         String password = etPassword.getText().toString();
 
-        if ((login.equals("Pluto")) && (password.equals("asdzxc"))) {
+        if ((login.equals("Pluto")) && (password.equals("asd"))) {
             Intent intent = new Intent(this, MenuActivity.class);
             final int result = 1;
 

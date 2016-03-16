@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_quiz"
     android:orientation="vertical"
     android:weightSum="1">
 
@@ -10,7 +11,9 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:text="Large Text" />
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:text="@string/Question" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,7 +29,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
             android:onClick="onAnswer" />
 
 
@@ -38,7 +41,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
             android:onClick="onAnswer" />
     </LinearLayout>
 
@@ -56,7 +59,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
             android:onClick="onAnswer" />
 
         <Button
@@ -67,7 +70,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
             android:onClick="onAnswer" />
     </LinearLayout>
 

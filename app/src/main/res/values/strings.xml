@@ -1,7 +1,18 @@
 <resources>
     <string name="app_name">WELowanie</string>
     <string name="title_activity_question">QuestionActivity</string>
-    
+    <string name="Change_level">Wybierz poziom rozgrywki:</string>
+    <string name="Question">Pytanie I: balb albalbsdf</string>
+    <string name="Statistics_button">Statystyki</string>
+    <string name="New_Game_Button">Nowa gra</string>
+    <string name="Welcome">Witaj,</string>
+    <string name="Login">Login:</string>
+    <string name="LoginHint">Tutaj podaj swój login</string>
+    <string name="Password">Hasło:</string>
+    <string name="PasswordHint">Tutaj podaj swoje hasło</string>
+    <string name="LoginButton">Zaloguj</string>
+    <string name="description">Dynamic</string>
+
     <string-array name="level_difficulty">
         <item>Semestr I</item>
         <item>Semestr II</item>

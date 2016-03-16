@@ -1,17 +1,15 @@
 package com.example.kuznargroup.welowanie;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.example.ardian.menuexample.R;
 
-
-public class SelectStageActivity extends AppCompatActivity {
+public class SelectStageActivity extends Activity {
 
     ArrayAdapter<String> adapter;
     ListView listView;
@@ -31,7 +29,7 @@ public class SelectStageActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Intent intent = new Intent (getApplicationContext(), QuestionActivity.class);
+                Intent intent = new Intent(getApplicationContext(), QuestionActivity.class);
                 intent.putExtra("Position", position);
                 startActivity(intent);
             }
