@@ -44,7 +44,6 @@
         android:layout_width="78dp"
         android:layout_height="40dp"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/button_menu"
         android:onClick="onStartLogin"
         android:text="@string/LoginButton" />
 </LinearLayout>

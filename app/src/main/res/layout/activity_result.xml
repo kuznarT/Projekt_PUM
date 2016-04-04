@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.example.kuznargroup.welowanie.ResultActivity">
+
+    <TextView
+        android:id="@+id/topText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/resultText"
+        android:textColor="@color/textWhite"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/firstPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/firstPlace"
+        android:textColor="@color/textWhite"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/secondPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/secondPlace"
+        android:textColor="@color/textWhite"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/thirdPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/thirdPlace"
+        android:textColor="@color/textWhite"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/buttonReturnToMenu"
+        android:layout_width="134dp"
+        android:layout_height="40dp"
+        android:textColor="@color/textWhite"
+        android:layout_gravity="right"
+        android:onClick="onReturnToMenu"
+        android:layout_marginRight="10dp"
+        android:text="@string/returnToMenu" />
+
+
+</LinearLayout>

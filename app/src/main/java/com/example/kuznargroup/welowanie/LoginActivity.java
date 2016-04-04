@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -11,6 +12,7 @@ public class LoginActivity extends Activity {
 
     EditText etLogin;
     EditText etPassword;
+    Button button;
 
 
     @Override
@@ -20,6 +22,8 @@ public class LoginActivity extends Activity {
 
         etLogin = (EditText) findViewById(R.id.loginText);
         etPassword = (EditText) findViewById(R.id.passwordText);
+        button = (Button) findViewById(R.id.logInButton);
+        button.setBackgroundResource(R.drawable.button_menu);
 
     }
 
@@ -27,6 +31,8 @@ public class LoginActivity extends Activity {
 
         String login = etLogin.getText().toString();
         String password = etPassword.getText().toString();
+        button.setBackgroundResource(R.drawable.button_menu_click);
+
 
         if ((login.equals("Pluto")) && (password.equals("asd"))) {
             Intent intent = new Intent(this, MenuActivity.class);
@@ -36,8 +42,14 @@ public class LoginActivity extends Activity {
 
             startActivityForResult(intent, result);
             finish();
-        } else
+        } else{
             Toast.makeText(this, "Złe hasło lub login", Toast.LENGTH_LONG).show();
+
+
+
+
+        }
+
 
     }
 
