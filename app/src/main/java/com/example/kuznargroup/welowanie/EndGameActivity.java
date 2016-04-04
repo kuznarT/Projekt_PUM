@@ -20,8 +20,7 @@ public class EndGameActivity extends Activity {
 
     public void onReturnToSelectStageClick(View view) {
         buttonOnReturnToSelectStageClick.setBackgroundResource(R.drawable.button_menu_click);
-        Intent intent = new Intent(this, SelectStageActivity.class);
-        startActivity(intent);
+        finish();
 
     }
 }
