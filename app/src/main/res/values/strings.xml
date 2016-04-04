@@ -38,4 +38,6 @@
     <string name="resultText">Top 3 wyników</string>
     <string name="exitButton">Wyjście</string>
     <string name="returnToMenu">Wróć do menu</string>
+    <string name="ECTS">ECTS</string>
+    <string name="returnToSelectStage">Wróć do wyboru poziomu</string>
 </resources>

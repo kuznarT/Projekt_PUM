@@ -49,7 +49,11 @@
             android:label="@string/title_activity_result"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.Design.NoActionBar" />
-        <activity android:name=".EndGameActivity"></activity>
+        <activity
+            android:name=".EndGameActivity"
+            android:label="KoniecRozgrywki"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Design.NoActionBar" />
     </application>
 
 </manifest>
