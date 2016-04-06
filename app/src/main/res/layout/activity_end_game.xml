@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_quiz"
+    android:background="@drawable/background_n"
     android:orientation="vertical"
     tools:context="com.example.kuznargroup.welowanie.EndGameActivity">
 
@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center"
+        android:paddingTop="20dp"
         android:text="Twój wynik to:"
         android:textColor="@color/textWhite"
         android:textSize="40sp" />
@@ -33,14 +34,15 @@
         android:gravity="center"
         android:text="@string/ECTS"
         android:textColor="@color/textYellow"
-        android:textSize="50sp" />
+        android:textSize="35sp" />
 
     <TextView
         android:id="@+id/sentence"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:text="Próbka jakiegoś tekstu, którego potem nie będzie tutaj"
         android:textColor="@color/textWhite"
         android:textSize="30sp" />

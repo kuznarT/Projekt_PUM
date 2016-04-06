@@ -3,12 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/background_n"
     android:orientation="vertical"
     tools:context="com.example.kuznargroup.welowanie.ResultActivity">
 
     <TextView
         android:id="@+id/topText"
+        android:padding="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -22,8 +23,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
         android:text="@string/firstPlace"
         android:textColor="@color/textWhite"
         android:textSize="40sp" />
@@ -33,22 +34,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
         android:text="@string/secondPlace"
         android:textColor="@color/textWhite"
-        android:textSize="35sp" />
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/thirdPlace"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
         android:text="@string/thirdPlace"
         android:textColor="@color/textWhite"
-        android:textSize="35sp" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/buttonReturnToMenu"
@@ -57,7 +58,8 @@
         android:textColor="@color/textWhite"
         android:layout_gravity="right"
         android:onClick="onReturnToMenu"
-        android:layout_marginRight="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="30dp"
         android:text="@string/returnToMenu" />
 
 

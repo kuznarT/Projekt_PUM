@@ -23,7 +23,7 @@ public class LoginActivity extends Activity {
         etLogin = (EditText) findViewById(R.id.loginText);
         etPassword = (EditText) findViewById(R.id.passwordText);
         button = (Button) findViewById(R.id.logInButton);
-        button.setBackgroundResource(R.drawable.button_menu);
+        button.setBackgroundResource(R.drawable.button_game);
 
     }
 
@@ -31,7 +31,7 @@ public class LoginActivity extends Activity {
 
         String login = etLogin.getText().toString();
         String password = etPassword.getText().toString();
-        button.setBackgroundResource(R.drawable.button_menu_click);
+        button.setBackgroundResource(R.drawable.button_game_click);
 
 
         if ((login.equals("Pluto")) && (password.equals("asd"))) {

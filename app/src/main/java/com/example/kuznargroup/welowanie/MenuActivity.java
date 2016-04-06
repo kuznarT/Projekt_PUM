@@ -19,11 +19,11 @@ public class MenuActivity extends Activity {
         setContentView(R.layout.activity_menu);
 
         buttonNewGame = (Button) findViewById(R.id.buttonNewGame);
-        buttonNewGame.setBackgroundResource(R.drawable.button_menu);
+        buttonNewGame.setBackgroundResource(R.drawable.button_game);
         buttonResult = (Button) findViewById(R.id.buttonResult);
-        buttonResult.setBackgroundResource(R.drawable.button_menu);
+        buttonResult.setBackgroundResource(R.drawable.button_game);
         buttonExit = (Button) findViewById(R.id.buttonExit);
-        buttonExit.setBackgroundResource(R.drawable.button_menu);
+        buttonExit.setBackgroundResource(R.drawable.button_game);
 
         String newString;
         if (savedInstanceState == null) {
@@ -44,7 +44,7 @@ public class MenuActivity extends Activity {
     }
 
     public void onNewGame(View view) {
-        buttonNewGame.setBackgroundResource(R.drawable.button_menu_click);
+        buttonNewGame.setBackgroundResource(R.drawable.button_game_click);
         Intent intentNext = new Intent(this, SelectStageActivity.class);
         startActivity(intentNext);
     }
@@ -52,19 +52,19 @@ public class MenuActivity extends Activity {
     @Override
     protected void onStart() {
         super.onStart();
-        buttonNewGame.setBackgroundResource(R.drawable.button_menu);
-        buttonResult.setBackgroundResource(R.drawable.button_menu);
-        buttonExit.setBackgroundResource(R.drawable.button_menu);
+        buttonNewGame.setBackgroundResource(R.drawable.button_game);
+        buttonResult.setBackgroundResource(R.drawable.button_game);
+        buttonExit.setBackgroundResource(R.drawable.button_game);
     }
 
     public void onResult(View view) {
-        buttonResult.setBackgroundResource(R.drawable.button_menu_click);
+        buttonResult.setBackgroundResource(R.drawable.button_game_click);
         Intent intentNext = new Intent(this, ResultActivity.class);
         startActivity(intentNext);
     }
 
     public void onExit(View view) {
-        buttonExit.setBackgroundResource(R.drawable.button_menu_click);
+        buttonExit.setBackgroundResource(R.drawable.button_game_click);
         finish();
     }
 }

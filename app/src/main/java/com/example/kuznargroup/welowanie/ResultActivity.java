@@ -15,13 +15,13 @@ public class ResultActivity extends Activity {
         setContentView(R.layout.activity_result);
 
         buttonOnReturnToMenu = (Button) findViewById(R.id.buttonReturnToMenu);
-        buttonOnReturnToMenu.setBackgroundResource(R.drawable.button_menu);
+        buttonOnReturnToMenu.setBackgroundResource(R.drawable.button_game);
 
 
     }
 
     public void onReturnToMenu(View view) {
-        buttonOnReturnToMenu.setBackgroundResource(R.drawable.button_menu_click);
+        buttonOnReturnToMenu.setBackgroundResource(R.drawable.button_game_click);
         finish();
 
     }

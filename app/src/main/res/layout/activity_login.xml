@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/background_n"
     android:orientation="vertical"
     android:weightSum="1">
 
@@ -12,11 +12,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
+        android:textColor="@color/textWhite"
         android:text="@string/Login"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
         android:id="@+id/loginText"
+        android:textColor="@color/textWhite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -26,6 +28,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/textWhite"
         android:layout_gravity="center_horizontal"
         android:text="@string/Password"
         android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -33,6 +36,7 @@
     <EditText
         android:id="@+id/passwordText"
         android:layout_width="wrap_content"
+        android:textColor="@color/textWhite"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:hint="@string/PasswordHint"
@@ -41,6 +45,7 @@
 
     <Button
         android:id="@+id/logInButton"
+        android:textColor="@color/textWhite"
         android:layout_width="78dp"
         android:layout_height="40dp"
         android:layout_gravity="center_horizontal"

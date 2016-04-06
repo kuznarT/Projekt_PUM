@@ -27,10 +27,10 @@ public class QuestionActivity extends Activity {
         buttonC = (Button) findViewById(R.id.buttonC);
         buttonD = (Button) findViewById(R.id.buttonD);
 
-        buttonA.setBackgroundResource(R.drawable.button);
-        buttonB.setBackgroundResource(R.drawable.button);
-        buttonC.setBackgroundResource(R.drawable.button);
-        buttonD.setBackgroundResource(R.drawable.button);
+        buttonA.setBackgroundResource(R.drawable.button_game);
+        buttonB.setBackgroundResource(R.drawable.button_game);
+        buttonC.setBackgroundResource(R.drawable.button_game);
+        buttonD.setBackgroundResource(R.drawable.button_game);
 
 
         //Wybór poziomu od 0 do 7, czyli od Semestru I do poziomu Bonusowego
@@ -50,24 +50,24 @@ public class QuestionActivity extends Activity {
 
     public void onAnswer(View view) {
 
-        buttonA.setBackgroundResource(R.drawable.button);
-        buttonB.setBackgroundResource(R.drawable.button);
-        buttonC.setBackgroundResource(R.drawable.button);
-        buttonD.setBackgroundResource(R.drawable.button);
+        buttonA.setBackgroundResource(R.drawable.button_game);
+        buttonB.setBackgroundResource(R.drawable.button_game);
+        buttonC.setBackgroundResource(R.drawable.button_game);
+        buttonD.setBackgroundResource(R.drawable.button_game);
 
 
         switch (view.getId()) {
             case R.id.buttonA:
-                buttonA.setBackgroundResource(R.drawable.button_click);
+                buttonA.setBackgroundResource(R.drawable.button_game_click);
                 break;
             case R.id.buttonB:
-                buttonB.setBackgroundResource(R.drawable.button_click);
+                buttonB.setBackgroundResource(R.drawable.button_game_click);
                 break;
             case R.id.buttonC:
-                buttonC.setBackgroundResource(R.drawable.button_click);
+                buttonC.setBackgroundResource(R.drawable.button_game_click);
                 break;
             case R.id.buttonD:
-                buttonD.setBackgroundResource(R.drawable.button_click);
+                buttonD.setBackgroundResource(R.drawable.button_game_click);
                 break;
 
         }
