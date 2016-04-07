@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.kuznargroup.welowanie">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    //Permission to make the network calls
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,6 +24,11 @@
         <activity
             android:name=".LoginActivity"
             android:label="Login"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Register"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.Design.NoActionBar" />
         <activity

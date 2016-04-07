@@ -13,6 +13,7 @@ public class LoginActivity extends Activity {
     EditText etLogin;
     EditText etPassword;
     Button button;
+    Button button2;
 
 
     @Override
@@ -23,7 +24,9 @@ public class LoginActivity extends Activity {
         etLogin = (EditText) findViewById(R.id.loginText);
         etPassword = (EditText) findViewById(R.id.passwordText);
         button = (Button) findViewById(R.id.logInButton);
+        button2 = (Button) findViewById(R.id.createAccButton);
         button.setBackgroundResource(R.drawable.button_game);
+        button2.setBackgroundResource(R.drawable.button_game);
 
     }
 
@@ -45,13 +48,14 @@ public class LoginActivity extends Activity {
         } else{
             Toast.makeText(this, "Złe hasło lub login", Toast.LENGTH_LONG).show();
 
-
-
-
         }
-
 
     }
 
+    public void onStartCreateAcc(View view) {
+        button2.setBackgroundResource(R.drawable.button_game_click);
+        Intent intent = new Intent(this, RegisterActivity.class);
+        startActivity(intent);
+    }
 }
 
