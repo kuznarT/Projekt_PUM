@@ -12,6 +12,7 @@
     <string name="PasswordHint">Tutaj podaj swoje hasło</string>
     <string name="LoginButton">Zaloguj</string>
     <string name="description">Dynamic</string>
+    <string name="RegisterButton">Zarejestruj</string>
 
     <string-array name="level_difficulty">
         <item>Semestr I</item>
@@ -40,4 +41,7 @@
     <string name="returnToMenu">Wróć do menu</string>
     <string name="ECTS">ECTS</string>
     <string name="returnToSelectStage">Wróć do wyboru poziomu</string>
+    <string name="CreateAccButton">Zarejetruj</string>
+    <string name="LoginCreateHint">Podaj wybrany login</string>
+    <string name="PasswordCreateHint">Podaj wybrane hasło</string>
 </resources>
