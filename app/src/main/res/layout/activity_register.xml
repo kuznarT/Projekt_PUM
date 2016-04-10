@@ -52,13 +52,5 @@
         android:onClick="onStartRegister"
         android:text="@string/RegisterButton" />
 
-    <TextView
-        android:id="@+id/registerError"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="10dip"
-        android:textColor="#e30000"
-        android:textStyle="bold" />
 </LinearLayout>
 

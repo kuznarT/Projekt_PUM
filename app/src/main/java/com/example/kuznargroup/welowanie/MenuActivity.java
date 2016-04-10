@@ -36,6 +36,7 @@ public class MenuActivity extends Activity {
         } else {
             newString = (String) savedInstanceState.getSerializable("user_login");
         }
+        //TODO: Displaying actual user name (it is stored in login field but it's not global)
 
         TextView callActTV = (TextView) findViewById(R.id.powitanie_tv);
 
@@ -69,3 +70,4 @@ public class MenuActivity extends Activity {
     }
 }
 
+//TODO: Disable back key. No need to get back to login activity when user is already logged in. Adrian change please
