@@ -14,7 +14,7 @@
         android:fontFamily="fonts/mcb.ttf"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
-        android:text="@string/Welcome" />
+        />
 
     <Button
         android:id="@+id/buttonNewGame"
