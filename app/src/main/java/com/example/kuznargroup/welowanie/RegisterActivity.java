@@ -11,10 +11,10 @@ And more stack overflow and git repositories and a bit more of stack overflow :)
 
 package com.example.kuznargroup.welowanie;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.os.Bundle;;
-import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -32,7 +32,7 @@ import java.net.URL;
 
 //TODO: Extract string resources i guess, also the same in LoginActivity
 
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterActivity extends Activity {
 
     EditText etLogin;
     EditText etPassword;

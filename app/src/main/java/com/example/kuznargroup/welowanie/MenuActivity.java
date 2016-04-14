@@ -69,5 +69,3 @@ public class MenuActivity extends Activity {
         finish();
     }
 }
-
-//TODO: Disable back key. No need to get back to login activity when user is already logged in. Adrian change please

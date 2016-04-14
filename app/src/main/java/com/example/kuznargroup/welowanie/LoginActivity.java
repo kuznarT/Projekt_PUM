@@ -130,6 +130,7 @@ public class LoginActivity extends Activity {
             if(loginSuccessful == 1){
                 Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
                 startActivity(intent);
+                finish();
             }
             else{
                 Toast.makeText (LoginActivity.this, "Bład", Toast.LENGTH_SHORT).show ();

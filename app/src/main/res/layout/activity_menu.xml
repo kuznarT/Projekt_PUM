@@ -11,6 +11,7 @@
         android:id="@+id/powitanie_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="fonts/mcb.ttf"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
         android:text="@string/Welcome" />
@@ -19,8 +20,9 @@
         android:id="@+id/buttonNewGame"
         android:layout_width="134dp"
         android:layout_height="40dp"
+        android:fontFamily="fonts/mcb.ttf"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="115dp"
         android:layout_weight="0.17"
         android:onClick="onNewGame"
         android:text="@string/New_Game_Button" />
