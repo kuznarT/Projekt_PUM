@@ -44,4 +44,5 @@
     <string name="CreateAccButton">Zarejetruj</string>
     <string name="LoginCreateHint">Podaj wybrany login</string>
     <string name="PasswordCreateHint">Podaj wybrane hasło</string>
+    <string name="nameSemestr">"Semestr: "</string>
 </resources>

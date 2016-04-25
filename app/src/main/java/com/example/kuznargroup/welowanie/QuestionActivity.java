@@ -1,16 +1,13 @@
 package com.example.kuznargroup.welowanie;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 
 public class QuestionActivity extends Activity {
 
-    int position = 0;
     Button buttonA;
     Button buttonB;
     Button buttonC;
@@ -31,18 +28,6 @@ public class QuestionActivity extends Activity {
         buttonB.setBackgroundResource(R.drawable.button_game);
         buttonC.setBackgroundResource(R.drawable.button_game);
         buttonD.setBackgroundResource(R.drawable.button_game);
-
-
-        //Wybór poziomu od 0 do 7, czyli od Semestru I do poziomu Bonusowego
-        Intent intent = getIntent();
-        position = intent.getExtras().getInt("Position");
-
-        //Tutaj przydałby się serwer
-        if (position == 0) {
-            Toast.makeText(QuestionActivity.this, "Pytania z semestru I", Toast.LENGTH_LONG).show();
-        } else if (position == 1) {
-            Toast.makeText(QuestionActivity.this, "Pytania z semestru II", Toast.LENGTH_LONG).show();
-        }
 
 
     }
