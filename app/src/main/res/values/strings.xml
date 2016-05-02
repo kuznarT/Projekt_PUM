@@ -2,7 +2,6 @@
     <string name="app_name">WELowanie</string>
     <string name="title_activity_question">QuestionActivity</string>
     <string name="Change_level">Wybierz poziom rozgrywki:</string>
-    <string name="Question">Pytanie I: balb albalbsdf</string>
     <string name="Statistics_button">Statystyki</string>
     <string name="New_Game_Button">Nowa gra</string>
     <string name="Welcome">Witaj,</string>
