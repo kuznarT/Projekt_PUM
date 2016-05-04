@@ -40,7 +40,7 @@ public class MenuActivity extends Activity {
 
         TextView callActTV = (TextView) findViewById(R.id.powitanie_tv);
 
-        callActTV.append(" " + newString);
+        callActTV.append("Witaj " + newString);
 
     }
 

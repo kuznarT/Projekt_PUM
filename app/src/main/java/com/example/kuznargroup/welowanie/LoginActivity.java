@@ -130,6 +130,12 @@ public class LoginActivity extends Activity {
             if(loginSuccessful == 1){
                 Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
                 startActivity(intent);
+
+                final int wynik = 1;
+
+                intent.putExtra("user_login", login);
+
+                startActivityForResult(intent, wynik);
                 finish();
             }
             else{
