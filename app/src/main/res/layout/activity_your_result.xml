@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_n"
+    android:orientation="vertical"
+    tools:context="com.example.kuznargroup.welowanie.YourResultActivity">
+
+    <TextView
+        android:id="@+id/yourResult_tv"
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/tw_j_wynik"
+        android:textColor="@color/textWhite"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/yourPoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textColor="@color/textWhite"
+        android:textSize="40sp" />
+
+
+
+
+    <Button
+        android:id="@+id/buttonReturnToMenu"
+        android:layout_width="134dp"
+        android:layout_height="40dp"
+        android:textColor="@color/textWhite"
+        android:layout_gravity="right"
+        android:onClick="onReturnToMenu"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/returnToMenu" />
+
+
+</LinearLayout>
