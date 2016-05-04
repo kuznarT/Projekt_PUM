@@ -1,5 +1,5 @@
 package com.example.kuznargroup.welowanie;
-
+//
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +19,7 @@ public class SelectStageActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_stage);
+
         viewPager = (ViewPager) findViewById(R.id.pager);
         pagerAdapter = new customAdapter(this);
         viewPager.setAdapter(pagerAdapter);
@@ -29,6 +30,7 @@ public class SelectStageActivity extends Activity {
     public void onQuestionsStart(View view) {
         Intent intent = new Intent(this, QuestionActivity.class);
         startActivity(intent);
+        finish();
     }
 }
 

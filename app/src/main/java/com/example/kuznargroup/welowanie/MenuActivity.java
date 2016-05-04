@@ -1,5 +1,5 @@
 package com.example.kuznargroup.welowanie;
-
+//
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -67,5 +67,6 @@ public class MenuActivity extends Activity {
     public void onExit(View view) {
         buttonExit.setBackgroundResource(R.drawable.button_game_click);
         finish();
+        System.exit(0);
     }
 }

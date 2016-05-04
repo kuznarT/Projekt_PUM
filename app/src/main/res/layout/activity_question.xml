@@ -10,9 +10,12 @@
     <TextView
         android:id="@+id/textView_pytanie"
         android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_height="120dp"
         android:textColor="#FFFFFF"
         android:gravity="center"
+
         android:text="" />
 
     <LinearLayout
@@ -26,6 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="5dp"
+            android:baselineAligned="false"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
@@ -39,6 +43,7 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="10dp"
+            android:baselineAligned="false"
             android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
             android:layout_weight="0.5"
@@ -58,6 +63,7 @@
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:baselineAligned="false"
             android:layout_marginTop="5dp"
             android:layout_weight="0.5"
             android:onClick="onAnswer" />
@@ -68,6 +74,7 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="10dp"
+            android:baselineAligned="false"
             android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
             android:layout_weight="0.5"
