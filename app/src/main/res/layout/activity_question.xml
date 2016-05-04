@@ -8,15 +8,22 @@
 
 
     <TextView
+        android:id="@+id/countText"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+    <TextView
         android:id="@+id/textView_pytanie"
         android:layout_width="match_parent"
+        android:layout_height="120dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_height="120dp"
-        android:textColor="#FFFFFF"
         android:gravity="center"
+        android:text=""
 
-        android:text="" />
+        android:textColor="#FFFFFF" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,11 +36,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="5dp"
-            android:baselineAligned="false"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
             android:layout_weight="0.5"
+            android:baselineAligned="false"
             android:onClick="onAnswer" />
 
 
@@ -43,10 +50,10 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="10dp"
-            android:baselineAligned="false"
             android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
             android:layout_weight="0.5"
+            android:baselineAligned="false"
             android:onClick="onAnswer" />
     </LinearLayout>
 
@@ -63,9 +70,9 @@
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:baselineAligned="false"
             android:layout_marginTop="5dp"
             android:layout_weight="0.5"
+            android:baselineAligned="false"
             android:onClick="onAnswer" />
 
         <Button
@@ -74,11 +81,12 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="10dp"
-            android:baselineAligned="false"
             android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
             android:layout_weight="0.5"
+            android:baselineAligned="false"
             android:onClick="onAnswer" />
     </LinearLayout>
+
 
 </LinearLayout>
