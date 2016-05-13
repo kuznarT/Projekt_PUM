@@ -36,9 +36,10 @@ public class RegisterActivity extends Activity {
 
     EditText etLogin;
     EditText etPassword;
+    EditText etPassword_confirm;
     Button button;
     String login;
-    String password;
+    String password,password_confirm;
     int accSet;
     JSONObject Json;
 
@@ -53,6 +54,8 @@ public class RegisterActivity extends Activity {
 
         etLogin = (EditText) findViewById(R.id.registerLogin);
         etPassword = (EditText) findViewById(R.id.registerPassword);
+        etPassword_confirm = (EditText) findViewById(R.id.registerPasswordConfirm);
+
     }
 
 
@@ -60,8 +63,12 @@ public class RegisterActivity extends Activity {
         button.setBackgroundResource(R.drawable.button_game_click);
         login = etLogin.getText().toString();
         password = etPassword.getText().toString();
-
-        new webServicesRegister().execute();
+        password_confirm = etPassword_confirm.getText().toString();
+        if(password.equals(password_confirm)) {
+            new webServicesRegister().execute();
+        }else{
+            Toast.makeText (RegisterActivity.this, "Hasła muszą się zgadzać!", Toast.LENGTH_SHORT).show ();
+        }
     }
 
     private class webServicesRegister extends AsyncTask<Void, Void, Void> {
@@ -116,7 +123,7 @@ public class RegisterActivity extends Activity {
 
             if(accSet == 1){
                 Toast.makeText (RegisterActivity.this, "Rejestracja zakończona", Toast.LENGTH_SHORT).show ();
-                Intent intent = new Intent(RegisterActivity.this, MenuActivity.class);
+                Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
             else{

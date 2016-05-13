@@ -45,6 +45,25 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/textWhite" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/confirm_pass"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/textWhite" />
+
+    <EditText
+        android:id="@+id/registerPasswordConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/backgroundEditText"
+        android:hint="@string/PasswordCreateHint"
+        android:inputType="textPassword"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/textWhite" />
+
     <Button
         android:id="@+id/registerButton"
         android:layout_width="120dp"

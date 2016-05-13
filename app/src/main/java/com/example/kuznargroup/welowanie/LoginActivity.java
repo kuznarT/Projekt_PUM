@@ -46,6 +46,7 @@ public class LoginActivity extends Activity {
     int loginSuccessful;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -134,7 +135,6 @@ public class LoginActivity extends Activity {
                 final int wynik = 1;
 
                 intent.putExtra("user_login", login);
-
                 startActivityForResult(intent, wynik);
                 finish();
             }
