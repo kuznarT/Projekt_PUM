@@ -2,7 +2,9 @@ package com.example.kuznargroup.welowanie;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v4.view.PagerAdapter;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +23,7 @@ public class customAdapter extends PagerAdapter {
     public customAdapter(Context ctx) {
         this.ctx = ctx;
     }
+
 
     @Override
     public int getCount() {
@@ -43,9 +46,12 @@ public class customAdapter extends PagerAdapter {
         Button button = (Button) item_view.findViewById(R.id.startGameButton);
         button.setText(ctx.getString(R.string.nameSemestr) + ++position);
         return item_view;
-
-
     }
+
+
+
+
+
 
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {

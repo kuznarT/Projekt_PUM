@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/PUMv4.iml" filepath="$PROJECT_DIR$/PUMv4.iml" />
       <module fileurl="file://$PROJECT_DIR$/Projekt_PUM.iml" filepath="$PROJECT_DIR$/Projekt_PUM.iml" />
       <module fileurl="file://$PROJECT_DIR$/Projekt_PUM_pytania.iml" filepath="$PROJECT_DIR$/Projekt_PUM_pytania.iml" />
       <module fileurl="file://$PROJECT_DIR$/Projekt_PUMv2_working.iml" filepath="$PROJECT_DIR$/Projekt_PUMv2_working.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

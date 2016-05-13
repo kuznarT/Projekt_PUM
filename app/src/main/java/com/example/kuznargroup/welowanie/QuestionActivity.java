@@ -32,7 +32,7 @@ public class QuestionActivity extends Activity {
     Call<pytania> QACall;
     pytania questionsAnswers;
     int licz = 0, punkty = 0;
-    String points;
+    String id;
     int resultTime=0, resultTime1=0, resultTime2=0,resultTime1ASCII=0,resultTime2ASCII=0;
     CountDownTimer ct;
 
@@ -66,10 +66,15 @@ public class QuestionActivity extends Activity {
 
             public void onFinish() {
                 count.setText("0");
+                koniec();
             }
         };
         ct.start();
 
+         Intent intent = getIntent();
+         position = intent.getExtras().getInt("position");
+         position++;
+         id = Integer.toString(position);
 
         //Retrofit magic part
         retrofit = new Retrofit.Builder()
@@ -79,7 +84,7 @@ public class QuestionActivity extends Activity {
 
         questionService = retrofit.create(QuestionService.class);
 
-        QACall = questionService.getQuestionsAnswers();
+        QACall = questionService.getQuestionsAnswers(id);
 
         QACall.enqueue(new Callback<pytania>() {
             @Override
@@ -168,22 +173,7 @@ public class QuestionActivity extends Activity {
 
         }
         if (licz == 5) {
-            String resultTimeString = ct.toString();
-            resultTime1ASCII = resultTimeString.charAt(resultTimeString.length() - 2);
-            resultTime2ASCII = resultTimeString.charAt(resultTimeString.length()-1);
-            resultTime1 = resultTime1ASCII - 48;
-            resultTime2 = resultTime2ASCII - 48;
-            resultTime = resultTime1 + resultTime2;
-            punkty = punkty * resultTime;
-            Intent intent = new Intent(QuestionActivity.this, YourResultActivity.class);
-            startActivity(intent);
-
-            final int wynik = 1;
-            //points = Integer.toString(punkty);
-            intent.putExtra("user_points", Integer.toString(punkty));
-
-            startActivityForResult(intent, wynik);
-            finish();
+            koniec();
 
         } else {
             Runnable r = new Runnable() {
@@ -202,6 +192,25 @@ public class QuestionActivity extends Activity {
 
         }
 
+    }
+
+    private void koniec() {
+        String resultTimeString = ct.toString();
+        resultTime1ASCII = resultTimeString.charAt(resultTimeString.length() - 2);
+        resultTime2ASCII = resultTimeString.charAt(resultTimeString.length()-1);
+        resultTime1 = resultTime1ASCII - 48;
+        resultTime2 = resultTime2ASCII - 48;
+        resultTime = resultTime1 + resultTime2;
+        punkty = punkty * resultTime;
+        Intent intent = new Intent(QuestionActivity.this, YourResultActivity.class);
+        startActivity(intent);
+
+        final int wynik = 1;
+        //points = Integer.toString(punkty);
+        intent.putExtra("user_points", Integer.toString(punkty));
+
+        startActivityForResult(intent, wynik);
+        finish();
     }
 
     public void giveQuestions() {

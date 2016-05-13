@@ -34,7 +34,7 @@ public class YourResultActivity extends Activity {
 
         TextView callActTV = (TextView) findViewById(R.id.powitanie_tv);
 
-        textView.setText("Zdobyłeś " + newString + " na 5 punktów");
+        textView.setText("Zdobyłeś " + newString + " punktów");
 
     }
 
