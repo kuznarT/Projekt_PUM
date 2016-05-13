@@ -45,4 +45,5 @@
     <string name="PasswordCreateHint">Podaj wybrane hasło</string>
     <string name="nameSemestr">"Semestr: "</string>
     <string name="tw_j_wynik">Twój wynik</string>
+    <string name="confirm_pass">Podaj hasło ponownie</string>
 </resources>
