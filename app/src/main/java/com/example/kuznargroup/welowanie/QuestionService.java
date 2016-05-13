@@ -13,7 +13,7 @@ import retrofit2.http.Query;
 
 
 public interface QuestionService {
-    @GET("question.php?id=1")
-    Call<pytania> getQuestionsAnswers();
+    @GET("question.php")
+    Call<pytania> getQuestionsAnswers(@Query("id") String id);
 
 }
