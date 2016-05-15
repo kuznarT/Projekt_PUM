@@ -127,7 +127,7 @@ public class LoginActivity extends Activity {
         protected void onPostExecute(Void result){
             try {
                 loginSuccessful = Json.getInt("success");
-                Globals.setScore(Json.getInt("score"));
+                Globals.setScore2(Json.getInt("score"));
             } catch (JSONException e) {
                 e.printStackTrace();
             }
