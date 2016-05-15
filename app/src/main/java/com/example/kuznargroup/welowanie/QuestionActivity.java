@@ -71,6 +71,7 @@ public class QuestionActivity extends Activity {
         };
         ct.start();
 
+
          Intent intent = getIntent();
          position = intent.getExtras().getInt("position");
          position++;
@@ -202,14 +203,10 @@ public class QuestionActivity extends Activity {
         resultTime2 = resultTime2ASCII - 48;
         resultTime = resultTime1 + resultTime2;
         punkty = punkty * resultTime;
+        Globals.setScore(punkty);
+        ct.cancel();
         Intent intent = new Intent(QuestionActivity.this, YourResultActivity.class);
         startActivity(intent);
-
-        final int wynik = 1;
-        //points = Integer.toString(punkty);
-        intent.putExtra("user_points", Integer.toString(punkty));
-
-        startActivityForResult(intent, wynik);
         finish();
     }
 

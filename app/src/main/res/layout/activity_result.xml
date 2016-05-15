@@ -25,7 +25,7 @@
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="5dp"
-        android:text="@string/firstPlace"
+        android:text=""
         android:textColor="@color/textWhite"
         android:textSize="40sp" />
 
@@ -36,7 +36,7 @@
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="10dp"
-        android:text="@string/secondPlace"
+        android:text=""
         android:textColor="@color/textWhite"
         android:textSize="30sp" />
 
@@ -47,7 +47,7 @@
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="10dp"
-        android:text="@string/thirdPlace"
+        android:text=""
         android:textColor="@color/textWhite"
         android:textSize="20sp" />
 

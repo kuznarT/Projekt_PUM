@@ -12,11 +12,12 @@ public class MenuActivity extends Activity {
     Button buttonNewGame;
     Button buttonResult;
     Button buttonExit;
-
+    Globals g = Globals.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
 
         buttonNewGame = (Button) findViewById(R.id.buttonNewGame);
         buttonNewGame.setBackgroundResource(R.drawable.button_game);
@@ -25,22 +26,11 @@ public class MenuActivity extends Activity {
         buttonExit = (Button) findViewById(R.id.buttonExit);
         buttonExit.setBackgroundResource(R.drawable.button_game);
 
-        String newString;
-        if (savedInstanceState == null) {
-            Bundle extras = getIntent().getExtras();
-            if (extras == null) {
-                newString = null;
-            } else {
-                newString = extras.getString("user_login");
-            }
-        } else {
-            newString = (String) savedInstanceState.getSerializable("user_login");
-        }
-        //TODO: Displaying actual user name (it is stored in login field but it's not global)
+
 
         TextView callActTV = (TextView) findViewById(R.id.powitanie_tv);
 
-        callActTV.append("Witaj " + newString);
+        callActTV.append("Witaj " + Globals.getLogin()+" masz "+Globals.getScore()+" pkt");
 
     }
 

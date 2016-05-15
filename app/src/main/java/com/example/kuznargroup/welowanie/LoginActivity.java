@@ -44,6 +44,8 @@ public class LoginActivity extends Activity {
     String password;
     JSONObject Json;
     int loginSuccessful;
+    int score;
+
 
 
 
@@ -125,17 +127,15 @@ public class LoginActivity extends Activity {
         protected void onPostExecute(Void result){
             try {
                 loginSuccessful = Json.getInt("success");
+                Globals.setScore(Json.getInt("score"));
             } catch (JSONException e) {
                 e.printStackTrace();
             }
             if(loginSuccessful == 1){
+                Globals.setLogin(login);
+                Globals.setPassword(password);
                 Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
                 startActivity(intent);
-
-                final int wynik = 1;
-
-                intent.putExtra("user_login", login);
-                startActivityForResult(intent, wynik);
                 finish();
             }
             else{

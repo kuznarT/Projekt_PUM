@@ -32,9 +32,6 @@
         <item>Trudność: *</item>
     </string-array>
     <string name="title_activity_result">ResultActivity</string>
-    <string name="firstPlace">1. Tyle i tyle ECTS</string>
-    <string name="secondPlace">2. Tyle i tyle ECTS</string>
-    <string name="thirdPlace">3. Tyle i tyle ECTS</string>
     <string name="resultText">Top 3 wyników</string>
     <string name="exitButton">Wyjście</string>
     <string name="returnToMenu">Wróć do menu</string>
