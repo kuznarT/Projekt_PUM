@@ -40,8 +40,12 @@ public class MenuActivity extends Activity {
         buttonResult.setBackgroundResource(R.drawable.button_game);
         buttonExit = (Button) findViewById(R.id.buttonExit);
         buttonExit.setBackgroundResource(R.drawable.button_game);
-        new webServicesLogin().execute();
-
+        if(Globals.getLogin().isEmpty()){
+            Intent intentNext = new Intent(this, LoginActivity.class);
+            startActivity(intentNext);
+        }else {
+            new webServicesLogin().execute();
+        }
 
     }
 
