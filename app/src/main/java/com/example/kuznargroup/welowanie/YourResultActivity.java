@@ -104,10 +104,10 @@ public class YourResultActivity extends Activity {
                 e.printStackTrace();
             }
             if(loginSuccessful == 1){
-                Toast.makeText (YourResultActivity.this, "Punkty dodane do bazy", Toast.LENGTH_SHORT).show ();
+
             }
             else{
-                Toast.makeText (YourResultActivity.this, "Bład", Toast.LENGTH_SHORT).show ();
+                Toast.makeText (YourResultActivity.this, "Nie dodano punktow do bazy", Toast.LENGTH_SHORT).show ();
                 //TODO: Better error explanation, e.g. not all fields filled and so on (Require also some work in php script)
                 //TODO: Add text field for error messages instead of toast
                 //TODO: Password should be hashed; sending in raw text at the moment

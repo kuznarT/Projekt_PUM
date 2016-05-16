@@ -68,8 +68,12 @@ public class LoginActivity extends Activity {
         login = etLogin.getText().toString();
         password = etPassword.getText().toString();
         button.setBackgroundResource(R.drawable.button_game_click);
+        if(login.isEmpty() || password.isEmpty()){
+            Toast.makeText (LoginActivity.this, "Jedno pole jest puste!", Toast.LENGTH_SHORT).show ();
+        }else{
+            new webServicesLogin().execute();
+        }
 
-        new webServicesLogin().execute();
 
     }
 
@@ -139,7 +143,7 @@ public class LoginActivity extends Activity {
                 finish();
             }
             else{
-                Toast.makeText (LoginActivity.this, "Bład", Toast.LENGTH_SHORT).show ();
+                Toast.makeText (LoginActivity.this, "Nie ma takiego użytkownika", Toast.LENGTH_SHORT).show ();
                 //TODO: Better error explanation, e.g. not all fields filled and so on (Require also some work in php script)
                 //TODO: Add text field for error messages instead of toast
                 //TODO: Password should be hashed; sending in raw text at the moment

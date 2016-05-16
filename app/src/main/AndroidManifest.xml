@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity
+            android:windowSoftInputMode="stateHidden"
             android:name=".LoginActivity"
             android:label="Login"
             android:screenOrientation="landscape" />

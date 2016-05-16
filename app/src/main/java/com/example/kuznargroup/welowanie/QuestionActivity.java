@@ -2,6 +2,7 @@ package com.example.kuznargroup.welowanie;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
@@ -136,39 +137,39 @@ public class QuestionActivity extends Activity {
                 buttonA.setBackgroundResource(R.drawable.button_game_click);
 
                 if (buttonA.getText() == questionsAnswers.Questions.get(licz - 1).answer1) {
-                    Toast.makeText(QuestionActivity.this, "Pan to umie ale tego nie rozumie :D", Toast.LENGTH_SHORT).show();
+                    Toascik_dobra();
                     punkty++;
                 } else {
-                    Toast.makeText(QuestionActivity.this, "...Bania.", Toast.LENGTH_SHORT).show();
+                    Toascik_zla();
                 }
                 break;
 
             case R.id.buttonB:
                 buttonB.setBackgroundResource(R.drawable.button_game_click);
                 if (buttonB.getText() == questionsAnswers.Questions.get(licz - 1).answer1) {
-                    Toast.makeText(QuestionActivity.this, "Pan to umie ale tego nie rozumie :D", Toast.LENGTH_SHORT).show();
+                    Toascik_dobra();
                     punkty++;
                 } else {
-                    Toast.makeText(QuestionActivity.this, "...Bania.", Toast.LENGTH_SHORT).show();
+                    Toascik_zla();
                 }
                 break;
             case R.id.buttonC:
                 buttonC.setBackgroundResource(R.drawable.button_game_click);
                 if (buttonC.getText() == questionsAnswers.Questions.get(licz - 1).answer1) {
-                    Toast.makeText(QuestionActivity.this, "Pan to umie ale tego nie rozumie :D", Toast.LENGTH_SHORT).show();
+                    Toascik_dobra();
                     punkty++;
                 } else {
-                    Toast.makeText(QuestionActivity.this, "...Bania.", Toast.LENGTH_SHORT).show();
+                    Toascik_zla();
                 }
                 break;
             case R.id.buttonD:
                 buttonD.setBackgroundResource(R.drawable.button_game_click);
 
                 if (buttonD.getText() == questionsAnswers.Questions.get(licz - 1).answer1) {
-                    Toast.makeText(QuestionActivity.this, "Pan to umie ale tego nie rozumie :D", Toast.LENGTH_SHORT).show();
+                    Toascik_dobra();
                     punkty++;
                 } else {
-                    Toast.makeText(QuestionActivity.this, "...Bania.", Toast.LENGTH_SHORT).show();
+                    Toascik_zla();
                 }
                 break;
 
@@ -197,6 +198,7 @@ public class QuestionActivity extends Activity {
     }
 
     private void koniec() {
+        ct.cancel();
         String resultTimeString = ct.toString();
         resultTime1ASCII = resultTimeString.charAt(resultTimeString.length() - 2);
         resultTime2ASCII = resultTimeString.charAt(resultTimeString.length()-1);
@@ -204,12 +206,22 @@ public class QuestionActivity extends Activity {
         resultTime2 = resultTime2ASCII - 48;
         resultTime = resultTime1 + resultTime2;
         //punkty = punkty * resultTime;
-        punkty = punkty * Globals.getCzas(); // mnożenie punktów przez czas który pozostał do końca rundy
-        Globals.setScore(punkty);
-        ct.cancel();
-        Intent intent = new Intent(QuestionActivity.this, YourResultActivity.class);
-        startActivity(intent);
-        finish();
+        if(punkty > 2) {
+            punkty = punkty * Globals.getCzas(); // mnożenie punktów przez czas który pozostał do końca rundy
+            Globals.setScore(punkty);
+        }else{
+            punkty = punkty * (Globals.getCzas()/2);
+            Globals.setScore(punkty);
+        }
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(QuestionActivity.this, YourResultActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        }, 800);
     }
 
     public void giveQuestions() {
@@ -221,5 +233,34 @@ public class QuestionActivity extends Activity {
         buttonD.setText(questionsAnswers.Questions.get(licz).getAnswer(3));
     }
 
+    public void Toascik_dobra(){
+        final Toast toast = Toast.makeText(QuestionActivity.this, "Pan to umie ale tego nie rozumie", Toast.LENGTH_SHORT);
+        TextView v = (TextView) toast.getView().findViewById(android.R.id.message);
+        v.setTextColor(Color.GREEN);
+        toast.show();
+
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                toast.cancel();
+            }
+        }, 800);
+    }
+
+    public void Toascik_zla(){
+        final Toast toast = Toast.makeText(QuestionActivity.this, "Bania", Toast.LENGTH_SHORT);
+        TextView v = (TextView) toast.getView().findViewById(android.R.id.message);
+        v.setTextColor(Color.RED);
+        toast.show();
+
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                toast.cancel();
+            }
+        }, 800);
+    }
 
 }
