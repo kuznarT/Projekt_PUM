@@ -48,8 +48,8 @@ public class YourResultActivity extends Activity {
 
         TextView callActTV = (TextView) findViewById(R.id.powitanie_tv);
 
-        textView.setText("Zdobyłeś " + Globals.getScore() + " punktów");
 
+        textView.setText("Zdobyłeś " + Globals.getScore() + " punktów w czasie "+(60-Globals.getCzas())+" sek");
 
     }
 

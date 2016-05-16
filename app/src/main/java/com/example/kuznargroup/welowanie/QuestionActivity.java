@@ -62,6 +62,7 @@ public class QuestionActivity extends Activity {
                 String v = String.format("%02d", millisUntilFinished/60000);
                 int va = (int)( (millisUntilFinished%60000)/1000);
                 count.setText(String.format("%02d", va));
+                Globals.setCzas(va);
             }
 
             public void onFinish() {
@@ -202,7 +203,8 @@ public class QuestionActivity extends Activity {
         resultTime1 = resultTime1ASCII - 48;
         resultTime2 = resultTime2ASCII - 48;
         resultTime = resultTime1 + resultTime2;
-        punkty = punkty * resultTime;
+        //punkty = punkty * resultTime;
+        punkty = punkty * Globals.getCzas(); // mnożenie punktów przez czas który pozostał do końca rundy
         Globals.setScore(punkty);
         ct.cancel();
         Intent intent = new Intent(QuestionActivity.this, YourResultActivity.class);

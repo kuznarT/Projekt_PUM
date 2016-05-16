@@ -9,6 +9,8 @@ public class Globals {
     private  static  String password;
     private  static  int score;
     private  static  int score2;
+    private  static  int czas;
+
     private  Globals(){}
 
     public static String getLogin() {
@@ -41,6 +43,14 @@ public class Globals {
 
     public static void setScore2(int score2) {
         Globals.score2 = score2;
+    }
+
+    public static int getCzas() {
+        return Globals.czas;
+    }
+
+    public static void setCzas(int czas) {
+        Globals.czas = czas;
     }
 
     public static synchronized  Globals getInstance(){
